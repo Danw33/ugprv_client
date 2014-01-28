@@ -1,0 +1,9 @@
+C:\Users\Daniel\Documents\Visual Studio 2013\Projects\ugprv_client\ugprv_ui_elements\bin\Release\ugprv_ui_elements.dll.config
+C:\Users\Daniel\Documents\Visual Studio 2013\Projects\ugprv_client\ugprv_ui_elements\bin\Release\ugprv_ui_elements.dll
+C:\Users\Daniel\Documents\Visual Studio 2013\Projects\ugprv_client\ugprv_ui_elements\bin\Release\ugprv_ui_elements.pdb
+C:\Users\Daniel\Documents\Visual Studio 2013\Projects\ugprv_client\ugprv_ui_elements\obj\Release\ugprv_ui_elements.AvionicsInstrumentsControls.AvionicsInstrumentsControlsRessources.resources
+C:\Users\Daniel\Documents\Visual Studio 2013\Projects\ugprv_client\ugprv_ui_elements\obj\Release\ugprv_ui_elements.Properties.Resources.resources
+C:\Users\Daniel\Documents\Visual Studio 2013\Projects\ugprv_client\ugprv_ui_elements\obj\Release\ugprv_ui_elements.csproj.GenerateResource.Cache
+C:\Users\Daniel\Documents\Visual Studio 2013\Projects\ugprv_client\ugprv_ui_elements\obj\Release\ugprv_ui_elements.dll
+C:\Users\Daniel\Documents\Visual Studio 2013\Projects\ugprv_client\ugprv_ui_elements\obj\Release\ugprv_ui_elements.pdb
+C:\Users\Daniel\Documents\Visual Studio 2013\Projects\ugprv_client\ugprv_ui_elements\obj\Release\ugprv_ui_elements.AirSpeedIndicatorInstrumentControl.resources
