@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class frmFlightMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmFlightMain))
         Me.ASI1 = New ugprv_ui_elements.AirSpeedIndicatorInstrumentControl()
         Me.ALT1 = New ugprv_ui_elements.AltimeterInstrumentControl()
         Me.AAI1 = New ugprv_ui_elements.AttitudeIndicatorInstrumentControl()
@@ -32,24 +32,24 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown5 = New System.Windows.Forms.NumericUpDown()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.NumericUpDown5 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ASI1
@@ -145,50 +145,48 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(192, 168)
         Me.Panel1.TabIndex = 8
         '
-        'Label2
+        'Label7
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(4, 4)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(80, 13)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Controls Debug"
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(37, 131)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(28, 13)
+        Me.Label7.TabIndex = 10
+        Me.Label7.Text = "Roll:"
         '
-        'Label3
+        'NumericUpDown5
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(23, 27)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(45, 13)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Altitude:"
+        Me.NumericUpDown5.Location = New System.Drawing.Point(74, 129)
+        Me.NumericUpDown5.Minimum = New Decimal(New Integer() {360, 0, 0, -2147483648})
+        Me.NumericUpDown5.Name = "NumericUpDown5"
+        Me.NumericUpDown5.Size = New System.Drawing.Size(91, 20)
+        Me.NumericUpDown5.TabIndex = 9
         '
-        'Label4
+        'NumericUpDown4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(27, 79)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(41, 13)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Speed:"
+        Me.NumericUpDown4.Location = New System.Drawing.Point(74, 103)
+        Me.NumericUpDown4.Maximum = New Decimal(New Integer() {359, 0, 0, 0})
+        Me.NumericUpDown4.Minimum = New Decimal(New Integer() {360, 0, 0, -2147483648})
+        Me.NumericUpDown4.Name = "NumericUpDown4"
+        Me.NumericUpDown4.Size = New System.Drawing.Size(91, 20)
+        Me.NumericUpDown4.TabIndex = 8
         '
-        'Label5
+        'NumericUpDown3
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(22, 53)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(46, 13)
-        Me.Label5.TabIndex = 3
-        Me.Label5.Text = "Attitude:"
+        Me.NumericUpDown3.Location = New System.Drawing.Point(74, 77)
+        Me.NumericUpDown3.Maximum = New Decimal(New Integer() {800, 0, 0, 0})
+        Me.NumericUpDown3.Name = "NumericUpDown3"
+        Me.NumericUpDown3.Size = New System.Drawing.Size(91, 20)
+        Me.NumericUpDown3.TabIndex = 7
         '
-        'Label6
+        'NumericUpDown2
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(18, 105)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(50, 13)
-        Me.Label6.TabIndex = 4
-        Me.Label6.Text = "Heading:"
+        Me.NumericUpDown2.Location = New System.Drawing.Point(74, 51)
+        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
+        Me.NumericUpDown2.Minimum = New Decimal(New Integer() {360, 0, 0, -2147483648})
+        Me.NumericUpDown2.Name = "NumericUpDown2"
+        Me.NumericUpDown2.Size = New System.Drawing.Size(91, 20)
+        Me.NumericUpDown2.TabIndex = 6
         '
         'NumericUpDown1
         '
@@ -199,46 +197,50 @@ Partial Class Form1
         Me.NumericUpDown1.Size = New System.Drawing.Size(91, 20)
         Me.NumericUpDown1.TabIndex = 5
         '
-        'NumericUpDown2
+        'Label6
         '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(74, 51)
-        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(91, 20)
-        Me.NumericUpDown2.TabIndex = 6
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(18, 105)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(50, 13)
+        Me.Label6.TabIndex = 4
+        Me.Label6.Text = "Heading:"
         '
-        'NumericUpDown3
+        'Label5
         '
-        Me.NumericUpDown3.Location = New System.Drawing.Point(74, 77)
-        Me.NumericUpDown3.Maximum = New Decimal(New Integer() {800, 0, 0, 0})
-        Me.NumericUpDown3.Name = "NumericUpDown3"
-        Me.NumericUpDown3.Size = New System.Drawing.Size(91, 20)
-        Me.NumericUpDown3.TabIndex = 7
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(22, 53)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(46, 13)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Attitude:"
         '
-        'NumericUpDown4
+        'Label4
         '
-        Me.NumericUpDown4.Location = New System.Drawing.Point(74, 103)
-        Me.NumericUpDown4.Maximum = New Decimal(New Integer() {359, 0, 0, 0})
-        Me.NumericUpDown4.Name = "NumericUpDown4"
-        Me.NumericUpDown4.Size = New System.Drawing.Size(91, 20)
-        Me.NumericUpDown4.TabIndex = 8
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(27, 79)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(41, 13)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "Speed:"
         '
-        'NumericUpDown5
+        'Label3
         '
-        Me.NumericUpDown5.Increment = New Decimal(New Integer() {10, 0, 0, 0})
-        Me.NumericUpDown5.Location = New System.Drawing.Point(74, 129)
-        Me.NumericUpDown5.Name = "NumericUpDown5"
-        Me.NumericUpDown5.Size = New System.Drawing.Size(91, 20)
-        Me.NumericUpDown5.TabIndex = 9
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(23, 27)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(45, 13)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Altitude:"
         '
-        'Label7
+        'Label2
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(37, 131)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(28, 13)
-        Me.Label7.TabIndex = 10
-        Me.Label7.Text = "Roll:"
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(4, 4)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(80, 13)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Controls Debug"
         '
         'Form1
         '
@@ -261,11 +263,11 @@ Partial Class Form1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
