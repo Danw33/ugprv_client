@@ -4,6 +4,8 @@ Imports ugprv_hid_connector.GamePad
 Imports LibVLC
 Imports LibVLC.NET
 Imports LibVLC.NET.LibVLCLibrary
+Imports LibVLC.NET.Presentation
+Imports LibVLC.NET.Presentation.MediaElement
 
 Public Class frmFlightMain
     Protected HIDGamePad As New ugprv_hid_connector.GamePad()

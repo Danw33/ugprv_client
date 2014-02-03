@@ -23,13 +23,6 @@ Partial Class frmFlightMain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmFlightMain))
-        Me.ASI1 = New ugprv_ui_elements.AirSpeedIndicatorInstrumentControl()
-        Me.ALT1 = New ugprv_ui_elements.AltimeterInstrumentControl()
-        Me.AAI1 = New ugprv_ui_elements.AttitudeIndicatorInstrumentControl()
-        Me.HDG1 = New ugprv_ui_elements.HeadingIndicatorInstrumentControl()
-        Me.TCI1 = New ugprv_ui_elements.TurnCoordinatorInstrumentControl()
-        Me.VSI1 = New ugprv_ui_elements.VerticalSpeedIndicatorInstrumentControl()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -43,80 +36,21 @@ Partial Class frmFlightMain
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.VSI1 = New ugprv_ui_elements.VerticalSpeedIndicatorInstrumentControl()
+        Me.TCI1 = New ugprv_ui_elements.TurnCoordinatorInstrumentControl()
+        Me.HDG1 = New ugprv_ui_elements.HeadingIndicatorInstrumentControl()
+        Me.AAI1 = New ugprv_ui_elements.AttitudeIndicatorInstrumentControl()
+        Me.ALT1 = New ugprv_ui_elements.AltimeterInstrumentControl()
+        Me.ASI1 = New ugprv_ui_elements.AirSpeedIndicatorInstrumentControl()
         Me.Panel1.SuspendLayout()
         CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'ASI1
-        '
-        Me.ASI1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.ASI1.Location = New System.Drawing.Point(380, 523)
-        Me.ASI1.Name = "ASI1"
-        Me.ASI1.Size = New System.Drawing.Size(148, 149)
-        Me.ASI1.TabIndex = 0
-        Me.ASI1.Text = "AirSpeedIndicatorInstrumentControl1"
-        '
-        'ALT1
-        '
-        Me.ALT1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.ALT1.Location = New System.Drawing.Point(748, 523)
-        Me.ALT1.Name = "ALT1"
-        Me.ALT1.Size = New System.Drawing.Size(148, 149)
-        Me.ALT1.TabIndex = 1
-        Me.ALT1.Text = "AltimeterInstrumentControl1"
-        '
-        'AAI1
-        '
-        Me.AAI1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.AAI1.Location = New System.Drawing.Point(534, 463)
-        Me.AAI1.Name = "AAI1"
-        Me.AAI1.Size = New System.Drawing.Size(208, 209)
-        Me.AAI1.TabIndex = 2
-        Me.AAI1.Text = "AttitudeIndicatorInstrumentControl1"
-        '
-        'HDG1
-        '
-        Me.HDG1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.HDG1.Location = New System.Drawing.Point(1077, 12)
-        Me.HDG1.Name = "HDG1"
-        Me.HDG1.Size = New System.Drawing.Size(122, 120)
-        Me.HDG1.TabIndex = 3
-        Me.HDG1.Text = "HeadingIndicatorInstrumentControl1"
-        '
-        'TCI1
-        '
-        Me.TCI1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.TCI1.Location = New System.Drawing.Point(902, 523)
-        Me.TCI1.Name = "TCI1"
-        Me.TCI1.Size = New System.Drawing.Size(148, 149)
-        Me.TCI1.TabIndex = 4
-        Me.TCI1.Text = "TurnCoordinatorInstrumentControl1"
-        '
-        'VSI1
-        '
-        Me.VSI1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.VSI1.Location = New System.Drawing.Point(226, 523)
-        Me.VSI1.Name = "VSI1"
-        Me.VSI1.Size = New System.Drawing.Size(148, 149)
-        Me.VSI1.TabIndex = 5
-        Me.VSI1.Text = "VerticalSpeedIndicatorInstrumentControl1"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.ugprv_client.My.Resources.Resources.Runway
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1211, 684)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
         '
         'Label1
         '
@@ -243,6 +177,72 @@ Partial Class frmFlightMain
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Controls Debug"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = Global.ugprv_client.My.Resources.Resources.Runway
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1211, 684)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
+        '
+        'VSI1
+        '
+        Me.VSI1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.VSI1.Location = New System.Drawing.Point(226, 523)
+        Me.VSI1.Name = "VSI1"
+        Me.VSI1.Size = New System.Drawing.Size(148, 149)
+        Me.VSI1.TabIndex = 5
+        Me.VSI1.Text = "VerticalSpeedIndicatorInstrumentControl1"
+        '
+        'TCI1
+        '
+        Me.TCI1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.TCI1.Location = New System.Drawing.Point(902, 523)
+        Me.TCI1.Name = "TCI1"
+        Me.TCI1.Size = New System.Drawing.Size(148, 149)
+        Me.TCI1.TabIndex = 4
+        Me.TCI1.Text = "TurnCoordinatorInstrumentControl1"
+        '
+        'HDG1
+        '
+        Me.HDG1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.HDG1.Location = New System.Drawing.Point(1077, 12)
+        Me.HDG1.Name = "HDG1"
+        Me.HDG1.Size = New System.Drawing.Size(122, 120)
+        Me.HDG1.TabIndex = 3
+        Me.HDG1.Text = "HeadingIndicatorInstrumentControl1"
+        '
+        'AAI1
+        '
+        Me.AAI1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.AAI1.Location = New System.Drawing.Point(534, 463)
+        Me.AAI1.Name = "AAI1"
+        Me.AAI1.Size = New System.Drawing.Size(208, 209)
+        Me.AAI1.TabIndex = 2
+        Me.AAI1.Text = "AttitudeIndicatorInstrumentControl1"
+        '
+        'ALT1
+        '
+        Me.ALT1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.ALT1.Location = New System.Drawing.Point(748, 523)
+        Me.ALT1.Name = "ALT1"
+        Me.ALT1.Size = New System.Drawing.Size(148, 149)
+        Me.ALT1.TabIndex = 1
+        Me.ALT1.Text = "AltimeterInstrumentControl1"
+        '
+        'ASI1
+        '
+        Me.ASI1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.ASI1.Location = New System.Drawing.Point(380, 523)
+        Me.ASI1.Name = "ASI1"
+        Me.ASI1.Size = New System.Drawing.Size(148, 149)
+        Me.ASI1.TabIndex = 0
+        Me.ASI1.Text = "AirSpeedIndicatorInstrumentControl1"
+        '
         'frmFlightMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -261,7 +261,6 @@ Partial Class frmFlightMain
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmFlightMain"
         Me.Text = "U-GPRV Control Software"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -269,6 +268,7 @@ Partial Class frmFlightMain
         CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

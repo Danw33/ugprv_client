@@ -74,15 +74,19 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -175,6 +179,10 @@
     <ProjectReference Include="..\..\OpenMFL\OpenMFL\OpenMFL.vbproj">
       <Project>{b2363d78-a4bd-4570-8340-9484e8b51d64}</Project>
       <Name>OpenMFL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibVLC.NET.Presentation\LibVLC.NET.Presentation.csproj">
+      <Project>{6757603C-3613-4CD6-86CC-5A25CF023CFA}</Project>
+      <Name>LibVLC.NET.Presentation</Name>
     </ProjectReference>
     <ProjectReference Include="..\LibVLC.NET\LibVLC.NET.csproj">
       <Project>{bb06dff7-4f41-4b9d-a3c3-3b6d2b8702b6}</Project>
