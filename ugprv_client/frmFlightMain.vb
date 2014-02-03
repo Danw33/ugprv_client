@@ -1,7 +1,9 @@
 ﻿Imports ugprv_ui_elements
 Imports ugprv_hid_connector
 Imports ugprv_hid_connector.GamePad
-Imports Media
+Imports LibVLC
+Imports LibVLC.NET
+Imports LibVLC.NET.LibVLCLibrary
 
 Public Class frmFlightMain
     Protected HIDGamePad As New ugprv_hid_connector.GamePad()
@@ -27,37 +29,14 @@ Public Class frmFlightMain
         Debug.WriteLine("[Media] Configuring RTSP Streaming Client...")
         Dim CamHost As String = "rtsp://127.0.0.1:8554/" '"rtsp://77.68.36.93:5661/Feed"
 
-        Dim CamAURI As String = CStr(CamHost & "")
-        Dim CamBURI As String = CStr(CamHost & "B")
-        Dim CamCURI As String = CStr(CamHost & "C")
-
-        Dim CamAStream As New Media.Rtsp.RtspClient(CamAURI, Rtsp.RtspClient.ClientProtocolType.Tcp)
-        Dim CamBStream As New Media.Rtsp.RtspClient(CamBURI, Rtsp.RtspClient.ClientProtocolType.Reliable)
-        Dim CamCStream As New Media.Rtsp.RtspClient(CamCURI, Rtsp.RtspClient.ClientProtocolType.Reliable)
-
-        Debug.WriteLine("[Media] Initiating RTSP Connections...")
-
         Try
-            CamAStream.Connect()
-            Debug.WriteLine("[Media] Feed A is ONLINE!")
+            Dim Media As New LibVLC.NET.LibVLCLibrary(System.IO.Directory.GetCurrentDirectory()) 'Loads LibVLC.NET with the libvlc.dll being in the running directory
+
+            Debug.WriteLine("[Media] Media Online")
         Catch ex As Exception
-            Debug.WriteLine("[Media] Feed A is OFFLINE! - " & ex.Message)
+            Debug.WriteLine("[Media] Media Error - " & ex.Message)
         End Try
 
-
-        'Try
-        '    CamBStream.Connect()
-        '    Debug.WriteLine("[Media] Feed B is ONLINE!")
-        'Catch ex As Exception
-        '    Debug.WriteLine("[Media] Feed B is OFFLINE! - " & ex.Message)
-        'End Try
-
-        'Try
-        '    CamCStream.Connect()
-        '    Debug.WriteLine("[Media] Feed C is ONLINE!")
-        'Catch ex As Exception
-        '    Debug.WriteLine("[Media] Feed C is OFFLINE! - " & ex.Message)
-        'End Try
     End Sub
 
     Private Sub HIDPoll_Tick(sender As Object, e As EventArgs) Handles HIDPoll.Tick

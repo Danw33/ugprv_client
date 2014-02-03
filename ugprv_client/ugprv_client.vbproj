@@ -31,7 +31,7 @@
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -176,13 +176,13 @@
       <Project>{b2363d78-a4bd-4570-8340-9484e8b51d64}</Project>
       <Name>OpenMFL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LibVLC.NET\LibVLC.NET.csproj">
+      <Project>{bb06dff7-4f41-4b9d-a3c3-3b6d2b8702b6}</Project>
+      <Name>LibVLC.NET</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ugprv_hid_connector\ugprv_hid_connector.vbproj">
       <Project>{929cea4a-9ba0-4f5e-b0c0-80cb46fd60ba}</Project>
       <Name>ugprv_hid_connector</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ugprv_mma\ugprv_mma.csproj">
-      <Project>{3f19c035-ad27-4c88-817d-e2abc550767d}</Project>
-      <Name>ugprv_mma</Name>
     </ProjectReference>
     <ProjectReference Include="..\ugprv_ui_elements\ugprv_ui_elements.csproj">
       <Project>{1d3163e6-dc65-4595-9d51-4fd9174f2f61}</Project>
