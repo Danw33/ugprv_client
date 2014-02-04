@@ -1,10 +1,17 @@
 ﻿Imports ugprv_ui_elements
 Imports ugprv_hid_connector
 Imports ugprv_hid_connector.GamePad
+Imports LibVLC
+Imports LibVLC.NET
+Imports LibVLC.NET.LibVLCLibrary
+Imports LibVLC.NET.Presentation
+Imports LibVLC.NET.Presentation.MediaElement
 
 Public Class frmFlightMain
     Protected HIDGamePad As New ugprv_hid_connector.GamePad()
     Protected WithEvents HIDPoll As New System.Windows.Forms.Timer()
+
+    Protected Media As New LibVLCLibrary("C:\VLC32\")  '(System.IO.Directory.GetCurrentDirectory()) 'Loads LibVLC.NET with the libvlc.dll being in the running directory
 
     Protected roll, pitch As Double
     Protected altitude, speed, heading As Integer
@@ -19,6 +26,22 @@ Public Class frmFlightMain
         HIDPoll.Start()
 
         Debug.WriteLine("[HID] HID Connector Running!")
+
+
+
+        'Camera stream stuff
+        Debug.WriteLine("[Media] Configuring RTSP Streaming Client...")
+        Dim CamHost As String = "rtsp://127.0.0.1:8554/" '"rtsp://77.68.36.93:5661/Feed"
+
+        Try
+            Dim MediaEngine = Media.libvlc_new()
+            Debug.WriteLine("[Media] Media Online")
+        Catch ex As Exception
+            Debug.WriteLine("[Media] Media Error - " & ex.Message)
+        Finally
+            LibVLCLibrary.Free(Media)
+        End Try
+
     End Sub
 
     Private Sub HIDPoll_Tick(sender As Object, e As EventArgs) Handles HIDPoll.Tick
