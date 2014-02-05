@@ -130,6 +130,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Sockets.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmFlightMain.resx">
