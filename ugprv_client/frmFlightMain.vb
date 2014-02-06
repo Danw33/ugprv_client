@@ -15,6 +15,7 @@ Public Class frmFlightMain
 
     Protected roll, pitch As Double
     Protected altitude, speed, heading As Integer
+    Protected Socket As Sockets.Socket
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Debug.WriteLine("[HID] Initialising HID Support")
@@ -28,6 +29,15 @@ Public Class frmFlightMain
         Debug.WriteLine("[HID] HID Connector Running!")
 
 
+        'Server Link
+        Debug.WriteLine("[Net] Connecting to Server...")
+        Dim SockHandler As New Sockets
+        Me.socket = SockHandler.Configure("127.0.0.1", 9000)
+        If Me.Socket.Connect().getStatus() = True Then
+            Debug.WriteLine("[Net] Socket Connected!")
+        Else
+            Debug.WriteLine("[Net] Socket Not Connected!")
+        End If
 
         'Camera stream stuff
         Debug.WriteLine("[Media] Configuring RTSP Streaming Client...")
